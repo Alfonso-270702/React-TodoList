@@ -16,7 +16,6 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  Select,
   Text,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
@@ -52,7 +51,7 @@ export function ModalForm({ isOpen, onClose, onAction, data, type }) {
     } else {
       reset();
     }
-  }, [data]);
+  }, [data, setValue, reset]);
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} isCentered>
