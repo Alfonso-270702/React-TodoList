@@ -12,7 +12,7 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Card, IconPlus, ModalDelete, IconDelete } from "../../components";
+import { Card, IconPlus, ModalDelete } from "../../components";
 import { useNavigate } from "react-router-dom";
 import { destroy, getAll, store } from "../../api/activity";
 import { ActivityEmpty } from "../../static/images";
