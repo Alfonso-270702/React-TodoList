@@ -10,22 +10,8 @@ function App() {
       <Header />
       <Container maxW="5xl">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <React.Suspense fallback={<>Loading...</>}>
-                <Dashboard />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="/item-list/:id"
-            element={
-              <React.Suspense fallback={<>Loading...</>}>
-                <Detail />
-              </React.Suspense>
-            }
-          />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/item-list/:id" element={<Detail />} />
         </Routes>
       </Container>
     </Router>
