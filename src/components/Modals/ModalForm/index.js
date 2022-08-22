@@ -39,10 +39,10 @@ export function ModalForm({ isOpen, onClose, onAction, data, type }) {
     },
   });
 
-  function onSubmit(values) {
+  const onSubmit = (values) => {
     onAction({ ...values });
     reset();
-  }
+  };
 
   useEffect(() => {
     if (data.id) {
